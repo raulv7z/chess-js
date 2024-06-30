@@ -33,8 +33,8 @@ class King extends Piece {
         super(id, color, cell);
         this.img =
             this.color == "black"
-                ? "src/assets/images/black-king.png"
-                : "src/assets/images/white-king.png";
+                ? "assets/black-king.png"
+                : "assets/white-king.png";
     }
 
     getMovements(board) {

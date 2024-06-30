@@ -33,8 +33,8 @@ class Bishop extends Piece {
         super(id, color, cell);
         this.img =
             this.color == "black"
-                ? "src/assets/images/black-bishop.png"
-                : "src/assets/images/white-bishop.png";
+                ? "assets/black-bishop.png"
+                : "assets/white-bishop.png";
     }
 
     getMovements(board) {

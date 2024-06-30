@@ -33,8 +33,8 @@ class Queen extends Piece {
         super(id, color, cell);
         this.img =
             this.color == "black"
-                ? "src/assets/images/black-queen.png"
-                : "src/assets/images/white-queen.png";
+                ? "assets/black-queen.png"
+                : "assets/white-queen.png";
     }
 
     getMovements(board) {

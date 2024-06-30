@@ -33,8 +33,8 @@ class Pawn extends Piece {
         super(id, color, cell);
         this.img =
             this.color == "black"
-                ? "src/assets/images/black-pawn.png"
-                : "src/assets/images/white-pawn.png";
+                ? "assets/black-pawn.png"
+                : "assets/white-pawn.png";
     }
 
     getMovements(board) {

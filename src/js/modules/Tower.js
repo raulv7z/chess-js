@@ -33,8 +33,8 @@ class Tower extends Piece {
         super(id, color, cell);
         this.img =
             this.color == "black"
-                ? "src/assets/images/black-tower.png"
-                : "src/assets/images/white-tower.png";
+                ? "assets/black-tower.png"
+                : "assets/white-tower.png";
     }
 
     getMovements(board) {

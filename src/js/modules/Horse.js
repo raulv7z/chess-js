@@ -33,8 +33,8 @@ class Horse extends Piece {
         super(id, color, cell);
         this.img =
             this.color == "black"
-                ? "src/assets/images/black-horse.png"
-                : "src/assets/images/white-horse.png";
+                ? "assets/black-horse.png"
+                : "assets/white-horse.png";
     }
 
     getMovements(board) {
