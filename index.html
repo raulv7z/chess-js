@@ -8,10 +8,10 @@
     </head>
     <body>
         <div id="app">
-            <h1 class="chess-title text-4xl my-4 font-bold">Chess Game</h1>
+            <h1 class="chess-title">Chess Game</h1>
 
-            <section class="game-display hidden flex-col md:flex-row gap-5">
-                <table class="game-board rounded-md">
+            <section class="game-display">
+                <table class="game-board">
                     <tr>
                         <td></td>
                         <td></td>
@@ -95,34 +95,34 @@
                 </table>
 
                 <div
-                    class="game-info rounded-md flex flex-row md:flex-col gap-y-10 justify-center p-2 flex-1 bg-amber-100 text-black"
+                    class="game-info"
                 >
                     <div
-                        class="game-info-turn flex flex-col p-5"
+                        class="game-info-section game-info-turn"
                     >
-                        <span class="font-bold italic tracking-widest text-sm md:text-md xl:text-xl"
+                        <span class="game-info-section-title"
                             >TURN</span
                         >
-                        <span class="game-info-turn-label text-sm xl:text-md">???</span>
+                        <span class="game-info-section-label game-info-turn-label">???</span>
                     </div>
-                    <div class="game-info-state flex flex-col p-5">
-                        <span class="font-bold italic tracking-widest text-sm md:text-md xl:text-xl"
+                    <div class="game-info-section game-info-state">
+                        <span class="game-info-section-title"
                             >STATE</span
                         >
-                        <span class="game-info-state-label text-sm xl:text-md">???</span>
+                        <span class="game-info-section-label game-info-state-label">???</span>
                     </div>
-                    <div class="game-info-winner flex flex-col p-5">
-                        <span class="font-bold italic tracking-widest text-sm md:text-md xl:text-xl"
+                    <div class="game-info-section game-info-winner">
+                        <span class="game-info-section-title"
                             >WINNER</span
                         >
-                        <span class="game-info-winner-label text-sm xl:text-md">???</span>
+                        <span class="game-info-section-label game-info-winner-label">???</span>
                     </div>
                 </div>
             </section>
 
             <button
                 type="button"
-                class="btn-play tracking-widest text-white bg-neutral-700 hover:bg-neutral-600 font-medium rounded-lg text-sm px-[100px] py-4 my-4 text-center inline-flex items-center"
+                class="btn-play"
             >
                 PLAY
             </button>

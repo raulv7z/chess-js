@@ -2,6 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+.chess-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.game-display {
+    display: none;
+    flex-direction: column;
+    gap: 1em 0;
+}
+
+.game-info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 2.5rem 0;
+    padding: 0.5rem;
+    background-color: rgb(130, 120, 110);
+}
+
+.game-info-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.game-info-section-title {
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+}
+
+.btn-play {
+    color: white;
+    background-color: #3f3f46;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1rem 6rem;
+    margin: 1rem 0;
+    letter-spacing: 0.1em;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-play:hover {
+    background-color: #52525b;
+}
+
 .game-board tr:nth-child(even) td:nth-child(odd),
 .game-board tr:nth-child(odd) td:nth-child(even) {
     background-color: rgb(208, 181, 146);
@@ -25,13 +74,39 @@
 
 /* Mobiles */
 @media only screen and (max-width: 400px) {
+    .game-info {
+        flex-direction: row;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .game-info-section-title {
+        font-size: 0.875rem;
+    }
+
+    .game-info-section-label {
+        font-size: 0.75rem;
+    }
+
     .game-board td {
         width: 2em;
         height: 2em;
     }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 600px) {
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+    .game-info {
+        flex-direction: row;
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    .game-info-section-title {
+        font-size: 1rem;
+    }
+
+    .game-info-section-label {
+        font-size: 0.875rem;
+    }
+
     .game-board td {
         width: 2.5em;
         height: 2.5em;
@@ -39,7 +114,24 @@
 }
 
 /* Tablets */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+    .game-display {
+        flex-direction: row;
+    }
+
+    .game-info {
+        flex-direction: column;
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .game-info-section-title {
+        font-size: 1rem;
+    }
+
+    .game-info-section-label {
+        font-size: 0.875rem
+    }
+
     .game-board td {
         width: 3.5em;
         height: 3.5em;
@@ -48,6 +140,23 @@
 
 /* PCs */
 @media only screen and (min-width: 1025px) {
+    .game-display {
+        flex-direction: row;
+    }
+
+    .game-info {
+        flex-direction: column;
+        border-radius: 0px 8px 8px 0px;
+    }
+
+    .game-info-section-title {
+        font-size: 1.25rem;
+    }
+
+    .game-info-section-label {
+        font-size: 1rem
+    }
+
     .game-board td {
         width: 4em;
         height: 4em;
