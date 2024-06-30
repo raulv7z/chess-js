@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.game-board tr:nth-child(even) td:nth-child(odd),
+.game-board tr:nth-child(odd) td:nth-child(even) {
+    background-color: rgb(208, 181, 146);
+}
+
+.game-board tr:nth-child(odd) td:nth-child(odd),
+.game-board tr:nth-child(even) td:nth-child(even) {
+    background-color: rgb(77, 62, 43);
+}
+
+.game-board img {
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.game-board img:hover {
+    filter: drop-shadow(0 0 0.6em #e2e2e2aa);
+}
+
+/* Mobiles */
+@media only screen and (max-width: 400px) {
+    .game-board td {
+        width: 2em;
+        height: 2em;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    .game-board td {
+        width: 2.5em;
+        height: 2.5em;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .game-board td {
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+
+/* PCs */
+@media only screen and (min-width: 1025px) {
+    .game-board td {
+        width: 4em;
+        height: 4em;
+    }
+}
