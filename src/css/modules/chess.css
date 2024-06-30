@@ -31,6 +31,8 @@
 }
 
 .btn-play {
+    cursor: pointer;
+    border: 0;
     color: white;
     background-color: #3f3f46;
     font-weight: bold;
@@ -45,6 +47,10 @@
 
 .btn-play:hover {
     background-color: #52525b;
+}
+
+.game-board {
+    border-collapse: collapse;
 }
 
 .game-board tr:nth-child(even) td:nth-child(odd),
