@@ -57,14 +57,6 @@ let clickedPiece,
 
 /*
 |
-|   App Init
-|
-*/
-
-document.addEventListener('DOMContentLoaded', initializeApp);
-
-/*
-|
 |   Functions
 |
 */
@@ -238,3 +230,11 @@ function createPiece(type, id, color, position) {
             throw new Error("Not a valid piece");
     }
 }
+
+/*
+|
+|   App Init
+|
+*/
+
+document.addEventListener('DOMContentLoaded', initializeApp);
