@@ -61,7 +61,7 @@ let clickedPiece,
 |
 */
 
-document.onload = initializeApp;
+document.addEventListener('DOMContentLoaded', initializeApp);
 
 /*
 |
