@@ -57,6 +57,14 @@ let clickedPiece,
 
 /*
 |
+|   App Init
+|
+*/
+
+document.onload = initializeApp;
+
+/*
+|
 |   Functions
 |
 */
@@ -230,9 +238,3 @@ function createPiece(type, id, color, position) {
             throw new Error("Not a valid piece");
     }
 }
-
-/*
-|   DOMContentLoaded initialization call.
-*/
-
-document.addEventListener("DOMContentLoaded", initializeApp);
