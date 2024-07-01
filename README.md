@@ -31,7 +31,7 @@ Follow these steps to set up and run the project in your local environment.
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/raulv7z/nexus-play-proj.git
+git clone https://github.com/raulv7z/chess-js.git
 ```
 
 ### Install Dependencies
